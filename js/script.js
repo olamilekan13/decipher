@@ -47,6 +47,12 @@ function fourth(){
 fourth();
 // function to count the characters in user input
 function count(){
- 
+  let division = userInput.length / 2;
+  const ROUND_DOWN = Math.floor(division);
+  let position = userInput.charAt(ROUND_DOWN);
+  let conc = position.concat(userInput);
+  let reverse = conc.split('').reverse().join('');
+  return console.log(reverse);
 }
 
+count();
